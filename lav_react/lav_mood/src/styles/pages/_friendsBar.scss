@@ -1,0 +1,109 @@
+.md-friends-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 240px;
+  background-color: #2f3136;
+
+  .md-search {
+    min-height: 48px;
+    box-shadow: 0 2px 1px 0 #202225;
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+
+    .md-search-input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      background-color: #202225;
+      border: 1px solid #2f3136;
+      border-radius: 4px;
+      color: #f6f6f7;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .md-friends-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: stretch;
+    padding: 20px 10px;
+    height: 100%;
+
+    .md-friends-messages-title {
+      font-size: 13px;
+      margin: 13px 15px 10px;
+    }
+
+    .md-friend {
+      display: flex;
+      align-items: center;
+      padding: 7px 10px;
+
+      &:hover {
+        background-color: #36393f;
+      }
+
+      &.md-friend-selected {
+        border-radius: 4px;
+        background-color: #4f545c;
+
+        .md-friend-title {
+          color: #d1d1d2;
+        }
+      }
+    }
+  }
+}
+
+//todo вынес отдельно чтобы было доступно в md-friends-cell
+.md-friend-avatar {
+  height: 30px;
+  width: 30px;
+  background-color: #7289da;
+  border-radius: 25px;
+  margin-right: 10px;
+  position: relative;
+
+  &.md-friend-status-icon:after {
+    content: " ";
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #4f545c;
+    border-radius: 7px;
+    width: 13px;
+    height: 13px;
+    background-color: #d1d1d2;
+  }
+
+  &.md-friend-online:after {
+    background-color: #43b581;
+  }
+}
+
+.md-friends-icon {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  i {
+    font-size: 24px;
+    color: #d1d1d2;
+    vertical-align: bottom;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+.md-friend-title {
+  color: #666;
+}

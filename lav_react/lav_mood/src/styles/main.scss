@@ -1,0 +1,17 @@
+//Resources
+
+@import "~mdi/scss/materialdesignicons.scss";
+
+// Base
+
+@import "base/variables";
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+
+// Pages
+
+@import "pages/app";
+@import "pages/canals";
+@import "pages/friendsBar";
+@import "pages/privateMessages";

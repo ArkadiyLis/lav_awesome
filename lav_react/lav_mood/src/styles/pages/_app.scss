@@ -1,0 +1,32 @@
+#md-app-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .md-app {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+
+    .md-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      height: 100%;
+      background-color: #36393f !important;
+      width: 100%;
+
+      .md-notification {
+        min-height: 36px;
+        background-color: coral;
+      }
+      .md-content {
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+      }
+    }
+  }
+}
